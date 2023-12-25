@@ -9,6 +9,7 @@ export VISUAL='nvim'
 export EDITOR='nvim'
 export TERMINAL='alacritty'
 export BROWSER='google-chrome-stable'
+export PATH="$HOME/.config/emacs/bin:$PATH"
 
 if [ -d "$HOME/.local/bin" ] ;
   then PATH="$HOME/.local/bin:$PATH"
@@ -120,17 +121,3 @@ alias update="paru -Syu --nocombinedupgrade"
 #  ├─┤│ │ │ │ │  └─┐ │ ├─┤├┬┘ │ 
 #  ┴ ┴└─┘ ┴ └─┘  └─┘ ┴ ┴ ┴┴└─ ┴ 
 # $HOME/.local/bin/colorscript -r
-
-# bun completions
-[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-
-# doomemacs
-export PATH="$HOME/.config/emacs/bin:$PATH"
