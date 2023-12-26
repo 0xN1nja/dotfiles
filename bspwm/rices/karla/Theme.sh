@@ -37,7 +37,7 @@ set_term_config() {
 # Set compositor configuration
 set_picom_config() {
 		sed -i "$HOME"/.config/bspwm/picom.conf \
-			-e "s/normal = .*/normal =  { fade = false; shadow = false; }/g" \
+			-e "s/normal = .*/normal =  { fade = true; shadow = true; }/g" \
 			-e "s/shadow-color = .*/shadow-color = \"#000000\"/g" \
 			-e "s/corner-radius = .*/corner-radius = 0/g" \
 			-e "s/\".*:class_g = 'Alacritty'\"/\"95:class_g = 'Alacritty'\"/g" \
