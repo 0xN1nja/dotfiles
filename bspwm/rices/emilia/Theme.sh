@@ -26,12 +26,41 @@ set_bspwm_config() {
 
 # Reload terminal colors
 set_term_config() {
-		sed -i "$HOME"/.config/alacritty/fonts.yml \
-		-e "s/family: .*/family: JetBrainsMono NF/g" \
-		-e "s/size: .*/size: 10/g"
-		
-		sed -i "$HOME"/.config/alacritty/rice-colors.yml \
-		-e "s/colors: .*/colors: *emilia_tokyo_night/"
+	cat > "$HOME"/.config/alacritty/rice-colors.toml << EOF
+# (Tokyo Night) color scheme for Emilia Rice
+
+# Default colors
+[colors.primary]
+background = "#1a1b26"
+foreground = "#c0caf5"
+
+# Cursor colors
+[colors.cursor]
+cursor = "#bb9af7"
+text = "#1a1b26"
+
+# Normal colors
+[colors.normal]
+black = "#414868"
+blue = "#7aa2f7"
+cyan = "#7dcfff"
+green = "#9ece6a"
+magenta = "#bb9af7"
+red = "#f7768e"
+white = "#787c99"
+yellow = "#e0af68"
+
+# Bright colors
+[colors.bright]
+black = "#414868"
+blue = "#7aa2f7"
+cyan = "#7dcfff"
+green = "#9ece6a"
+magenta = "#bb9af7"
+red = "#f7768e"
+white = "#c0caf5"
+yellow = "#e0af68"
+EOF
 }
 
 # Set compositor configuration
