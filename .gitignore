@@ -1,0 +1,11 @@
+config/bspwm/scripts/.sys
+config/mpd/*
+!config/mpd/mpd.conf
+config/ncmpcpp/*
+!config/ncmpcpp/config
+config/nvim/lazy-lock.json
+config/ranger/colorschemes/__pycache__
+config/ranger/plugins/__pycache__
+config/ranger/plugins/ranger_devicons/__pycache__
+config/zsh/*
+!config/zsh/.zshrc
