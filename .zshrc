@@ -126,7 +126,7 @@ fi
 #  ┴ ┴┴─┘┴┴ ┴└─┘
 alias ls="lsd -a --group-directories-first"
 alias cleanup="sudo pacman -Scc && sudo paru -Scc && sudo rm -rf .cache/paru/clone"
-alias purge="sudo pacman -Rns $(pacman -Qtdq) ; sudo fstrim -av"
+alias purge="sudo pacman -Rns $(pacman -Qtdq)"
 alias music="ncmpcpp"
 
 #  ┌─┐┬ ┬┌┬┐┌─┐  ┌─┐┌┬┐┌─┐┬─┐┌┬┐
