@@ -29,7 +29,7 @@ sleep 2
 
 dependencies=(alacritty base-devel bat brightnessctl bspwm dunst eza feh firefox geany git gvfs-mtp imagemagick jq
     jgmenu kitty libwebp lightdm lightdm-gtk-greeter lsd maim mpc mpd ncmpcpp neovim npm nm-connection-editor pamixer
-    pacman-contrib papirus-icon-theme physlock picom playerctl polybar polkit-gnome python-gobject ranger redshift rofi
+    pacman-contrib papirus-icon-theme picom playerctl polybar polkit-gnome python-gobject ranger redshift rofi
     rustup sxhkd thunar tmux tumbler ttf-dejavu ttf-inconsolata ttf-jetbrains-mono ttf-jetbrains-mono-nerd ttf-joypixels
     ttf-liberation ttf-opensans ttf-terminus-nerd ttf-indic-otf ueberzug webp-pixbuf-loader xclip xdg-user-dirs xdo xdotool
     xsettingsd xorg-server xorg-xdpyinfo xorg-xinit xorg-xkill xorg-xprop xorg-xrandr xorg-xsetroot xorg-xwininfo zsh
@@ -189,7 +189,7 @@ clear
 # Install other dependencies
 echo "Installing other dependencies"
 sleep 2
-paru -S --needed tdrop-git xqp rofi-greenclip ttf-maple simple-mtpfs --skipreview --noconfirm
+paru -S --needed tdrop-git xqp rofi-greenclip ttf-maple simple-mtpfs i3lock-color --skipreview --noconfirm
 clear
 
 # Install eww
