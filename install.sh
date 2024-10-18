@@ -196,16 +196,8 @@ clear
 echo "Installing eww"
 sleep 2
 if ! command -v eww > /dev/null 2>&1; then
-    if [ ! -d "eww" ]; then
-        git clone --depth 1 https://github.com/elkowar/eww.git
-    else
-        echo "eww directory already exists. Skipping clone"
-    fi
-    cd eww
     sudo pacman -S libdbusmenu-gtk3 --noconfirm
-    cargo build --release --no-default-features --features x11
-    sudo install -m 755 "target/release/eww" -t /usr/local/bin
-    cd -
+    paru -S eww-git --skipreview --noconfirm
 else
     echo "eww is already installed"
     sleep 2
