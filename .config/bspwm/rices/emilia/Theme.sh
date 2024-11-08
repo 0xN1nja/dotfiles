@@ -21,7 +21,7 @@ read -r RICE < "$HOME"/.config/bspwm/.rice
 BORDER_WIDTH="0"	NORMAL_BC="#414868"		FOCUSED_BC="#bb9af7"
 
 # Fade true|false	# Shadows true|false	# Corner radius		# Shadow color			# Animations true|false
-P_FADE="true"		P_SHADOWS="false"		P_CORNER_R="6"		SHADOW_C="#000000"		ANIMATIONS="true"
+P_FADE="true"		P_SHADOWS="true"		P_CORNER_R="6"		SHADOW_C="#000000"		ANIMATIONS="true"
 
 # (Tokyo Night) colorscheme
 bg="#1a1b26"  fg="#c0caf5"
