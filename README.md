@@ -13,7 +13,7 @@ Configuration files for my Arch Linux setup.
 | Widgets              | [eww](https://github.com/elkowar/eww)                                                            |
 | Music player         | [mpd](https://github.com/MusicPlayerDaemon/MPD)-[ncmpcpp](https://github.com/ncmpcpp/ncmpcpp)    |
 | Editor               | [Neovim](https://github.com/neovim/neovim)/[Geany](https://github.com/geany/geany)               |
-| File manager         | [ranger](https://github.com/ranger/ranger)/[Thunar](https://docs.xfce.org/xfce/thunar/start)     |
+| File manager         | [Yazi](https://github.com/sxyazi/yazi)/[Thunar](https://docs.xfce.org/xfce/thunar/start)         |
 | Shell                | [Zsh](https://www.zsh.org)                                                                       |
 | Compositor           | [picom](https://github.com/yshui/picom)                                                          |
 | Notification daemon  | [Dunst](https://github.com/dunst-project/dunst)                                                  |
