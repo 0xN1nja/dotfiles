@@ -29,7 +29,7 @@ sleep 2
 
 dependencies=(alacritty base-devel bat brightnessctl bspwm dunst eza feh firefox geany git gvfs-mtp imagemagick jq
     jgmenu kitty libwebp lightdm lightdm-gtk-greeter lsd maim mpc mpd ncmpcpp neovim npm nm-connection-editor pamixer
-    pacman-contrib papirus-icon-theme picom playerctl polybar polkit-gnome python-gobject ranger redshift rofi
+    pacman-contrib papirus-icon-theme picom playerctl polybar polkit-gnome python-gobject yazi redshift rofi
     rustup sxhkd thunar tmux tumbler ttf-dejavu ttf-inconsolata ttf-jetbrains-mono ttf-jetbrains-mono-nerd ttf-joypixels
     ttf-liberation ttf-opensans ttf-terminus-nerd ttf-indic-otf ueberzug webp-pixbuf-loader xclip xdg-user-dirs xdo xdotool
     xsettingsd xorg-server xorg-xdpyinfo xorg-xinit xorg-xkill xorg-xprop xorg-xrandr xorg-xsetroot xorg-xwininfo zsh
@@ -91,7 +91,7 @@ if [ -d ~/.config ]; then
     mkdir -p $backup_folder/home
 
     # Backup ~/.config/*
-    for dir in alacritty bspwm geany gtk-3.0 kitty mpd ncmpcpp ranger tmux zsh; do
+    for dir in alacritty bspwm geany gtk-3.0 kitty mpd ncmpcpp yazi tmux zsh; do
         if [ -d ~/.config/$dir ]; then
             mv ~/.config/$dir $backup_folder/.config
             echo "Backup of ~/.config/$dir created"
@@ -122,7 +122,7 @@ clear
 echo "Copying .config/* to ~/.config"
 sleep 2
 [ ! -d ~/.config ] && mkdir -p ~/.config
-for dir in alacritty bspwm geany gtk-3.0 kitty mpd ncmpcpp ranger tmux zsh; do
+for dir in alacritty bspwm geany gtk-3.0 kitty mpd ncmpcpp yazi tmux zsh; do
     if cp -R .config/$dir ~/.config; then
         echo ".config/$dir copied to ~/.config/$dir"
     else
