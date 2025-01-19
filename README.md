@@ -8,7 +8,7 @@ Configuration files for my Arch Linux setup.
 | -------------------- | ------------------------------------------------------------------------------------------------ |
 | Window manager       | [bspwm](https://github.com/baskerville/bspwm)                                                    |
 | Bar                  | [Polybar](https://github.com/polybar/polybar)                                                    |
-| Terminal emulator    | [Alacritty](https://github.com/alacritty/alacritty)                                              |
+| Terminal emulator    | [Alacritty](https://github.com/alacritty/alacritty)/[kitty](https://github.com/kovidgoyal/kitty) |
 | Application launcher | [Rofi](https://github.com/davatorium/rofi)                                                       |
 | Widgets              | [eww](https://github.com/elkowar/eww)                                                            |
 | Music player         | [mpd](https://github.com/MusicPlayerDaemon/MPD)-[ncmpcpp](https://github.com/ncmpcpp/ncmpcpp)    |

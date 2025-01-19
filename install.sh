@@ -28,7 +28,7 @@ echo "Installing dependencies"
 sleep 2
 
 dependencies=(alacritty base-devel bat brightnessctl bspwm dunst eza feh firefox geany git gvfs-mtp imagemagick jq
-    jgmenu libwebp lightdm lightdm-gtk-greeter lsd maim mpc mpd mpv ncmpcpp neovim npm nm-connection-editor pamixer
+    jgmenu kitty libwebp lightdm lightdm-gtk-greeter lsd maim mpc mpd mpv ncmpcpp neovim npm nm-connection-editor pamixer
     pacman-contrib papirus-icon-theme picom playerctl polybar polkit-gnome python-gobject yazi redshift rofi
     rustup sxhkd thunar tmux tumbler ttf-dejavu ttf-inconsolata ttf-jetbrains-mono ttf-jetbrains-mono-nerd ttf-joypixels
     ttf-liberation ttf-opensans ttf-terminus-nerd ttf-indic-otf ueberzug webp-pixbuf-loader xclip xdg-user-dirs xdo xdotool
