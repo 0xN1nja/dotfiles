@@ -27,7 +27,7 @@ clear
 echo "Installing dependencies"
 sleep 2
 
-dependencies=(alacritty base-devel bat brightnessctl bspwm dunst eza feh firefox geany git gvfs-mtp imagemagick jq
+dependencies=(alacritty base-devel bat brightnessctl bspwm clipcat dunst eza feh firefox geany git gvfs-mtp imagemagick jq
     jgmenu kitty libwebp lightdm lightdm-gtk-greeter lsd maim mpc mpd mpv ncmpcpp neovim npm nm-connection-editor pamixer
     pacman-contrib papirus-icon-theme picom playerctl polybar polkit-gnome python-gobject yazi redshift rofi
     rustup sxhkd thunar tmux tumbler ttf-dejavu ttf-inconsolata ttf-jetbrains-mono ttf-jetbrains-mono-nerd ttf-joypixels
@@ -189,7 +189,7 @@ clear
 # Install other dependencies
 echo "Installing other dependencies"
 sleep 2
-paru -S --needed tdrop-git xqp rofi-greenclip ttf-maple simple-mtpfs i3lock-color xwinwrap-0.9-bin --skipreview --noconfirm
+paru -S --needed tdrop-git xqp ttf-maple simple-mtpfs i3lock-color xwinwrap-0.9-bin --skipreview --noconfirm
 clear
 
 # Install eww
