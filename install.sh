@@ -31,7 +31,7 @@ dependencies=(alacritty base-devel bat brightnessctl bspwm clipcat dunst eza feh
     jgmenu kitty libwebp lightdm lightdm-gtk-greeter lsd maim mpc mpd mpv ncmpcpp neovim npm nm-connection-editor pamixer
     pacman-contrib papirus-icon-theme picom playerctl polybar polkit-gnome python-gobject yazi redshift rofi
     rustup sxhkd thunar tmux tumbler ttf-dejavu ttf-inconsolata ttf-jetbrains-mono ttf-jetbrains-mono-nerd ttf-joypixels
-    ttf-liberation ttf-opensans ttf-terminus-nerd ttf-indic-otf ueberzug webp-pixbuf-loader xclip xdg-user-dirs xdo xdotool
+    ttf-liberation ttf-opensans ttf-terminus-nerd ttf-indic-otf ueberzugpp webp-pixbuf-loader xclip xdg-user-dirs xdo xdotool
     xsettingsd xorg-server xorg-xdpyinfo xorg-xinit xorg-xkill xorg-xprop xorg-xrandr xorg-xsetroot xorg-xwininfo zsh
     zsh-autosuggestions zsh-history-substring-search zsh-syntax-highlighting)
 
