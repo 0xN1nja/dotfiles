@@ -47,6 +47,10 @@ super + {p,t,w}
 ctrl + super + shift + {c,m,u}
   {OpenApps --calendar, OpenApps --player, OpenApps --usercard}
 
+# Rice Editor App
+Super + r
+    RiceEditor
+
 # ----- Rofi Applets ----- #
 
 #Terminal Selector
