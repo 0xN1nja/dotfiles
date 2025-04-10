@@ -27,13 +27,15 @@ clear
 echo "Installing dependencies"
 sleep 2
 
-dependencies=(alacritty base-devel bat brightnessctl bspwm clipcat dunst eza feh firefox fzf geany git gvfs-mtp imagemagick jq
-    jgmenu kitty libwebp lightdm lightdm-gtk-greeter lsd maim mpc mpd mpv ncmpcpp neovim npm nm-connection-editor pamixer
-    pacman-contrib papirus-icon-theme picom playerctl polybar polkit-gnome python-gobject yazi redshift rofi
-    rustup sxhkd thunar tmux tumbler ttf-dejavu ttf-inconsolata ttf-jetbrains-mono ttf-jetbrains-mono-nerd ttf-joypixels
-    ttf-liberation ttf-opensans ttf-terminus-nerd ttf-indic-otf ueberzugpp webp-pixbuf-loader xclip xdg-user-dirs xdo xdotool
-    xsettingsd xorg-server xorg-xdpyinfo xorg-xinit xorg-xkill xorg-xprop xorg-xrandr xorg-xsetroot xorg-xwininfo zsh
-    zsh-autosuggestions zsh-history-substring-search zsh-syntax-highlighting)
+dependencies=(
+    alacritty base-devel bat brightnessctl bspwm clipcat dunst eza feh firefox fzf geany git gvfs-mtp imagemagick
+    jgmenu jq kitty libwebp lightdm lightdm-gtk-greeter lsd maim mpd mpc mpv ncmpcpp neovim nm-connection-editor npm
+    pacman-contrib pamixer papirus-icon-theme picom playerctl polkit-gnome polybar python-gobject redshift rofi rustup
+    sxhkd thunar tmux tumbler ttf-dejavu ttf-inconsolata ttf-indic-otf ttf-jetbrains-mono ttf-jetbrains-mono-nerd
+    ttf-joypixels ttf-liberation ttf-opensans ttf-terminus-nerd ueberzugpp webp-pixbuf-loader xclip xdg-user-dirs xdo
+    xdotool xorg-server xorg-xdpyinfo xorg-xinit xorg-xkill xorg-xprop xorg-xrandr xorg-xsetroot xorg-xwininfo
+    xsettingsd yazi zsh zsh-autosuggestions zsh-history-substring-search zsh-syntax-highlighting
+)
 
 sudo pacman -S --needed "${dependencies[@]}" --noconfirm
 clear
@@ -189,7 +191,7 @@ clear
 # Install other dependencies
 echo "Installing other dependencies"
 sleep 2
-paru -S --needed fzf-tab-git tdrop-git xqp simple-mtpfs i3lock-color xwinwrap-0.9-bin --skipreview --noconfirm
+paru -S --needed fzf-tab-git xqp simple-mtpfs i3lock-color xwinwrap-0.9-bin --skipreview --noconfirm
 clear
 
 # Install eww
