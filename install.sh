@@ -93,7 +93,7 @@ if [ -d ~/.config ]; then
     mkdir -p $backup_folder/home
 
     # Backup ~/.config/*
-    for dir in alacritty bspwm geany gtk-3.0 mpd ncmpcpp systemd yazi tmux zsh; do
+    for dir in alacritty bspwm geany gtk-3.0 mpd ncmpcpp systemd tmux yazi zsh; do
         if [ -d ~/.config/$dir ]; then
             mv ~/.config/$dir $backup_folder/.config
             echo "Backup of ~/.config/$dir created"
@@ -124,7 +124,7 @@ clear
 echo "Copying .config/* to ~/.config"
 sleep 2
 [ ! -d ~/.config ] && mkdir -p ~/.config
-for dir in alacritty bspwm geany gtk-3.0 mpd ncmpcpp systemd yazi tmux zsh; do
+for dir in alacritty bspwm geany gtk-3.0 mpd ncmpcpp systemd tmux yazi zsh; do
     if cp -R .config/$dir ~/.config; then
         echo ".config/$dir copied to ~/.config/$dir"
     else
