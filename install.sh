@@ -93,7 +93,7 @@ if [ -d ~/.config ]; then
     mkdir -p $backup_folder/home
 
     # Backup ~/.config/*
-    for dir in alacritty bspwm geany gtk-3.0 mpd ncmpcpp yazi tmux zsh; do
+    for dir in alacritty bspwm geany gtk-3.0 mpd ncmpcpp systemd yazi tmux zsh; do
         if [ -d ~/.config/$dir ]; then
             mv ~/.config/$dir $backup_folder/.config
             echo "Backup of ~/.config/$dir created"
@@ -124,7 +124,7 @@ clear
 echo "Copying .config/* to ~/.config"
 sleep 2
 [ ! -d ~/.config ] && mkdir -p ~/.config
-for dir in alacritty bspwm geany gtk-3.0 mpd ncmpcpp yazi tmux zsh; do
+for dir in alacritty bspwm geany gtk-3.0 mpd ncmpcpp systemd yazi tmux zsh; do
     if cp -R .config/$dir ~/.config; then
         echo ".config/$dir copied to ~/.config/$dir"
     else
@@ -161,6 +161,18 @@ for dir in bin share; do
     fi
     sleep 1
 done
+sleep 2
+clear
+
+# Copy .local/polybar-update.hook to /etc/pacman.d/hooks
+echo "Copying .local/polybar-update.hook to /etc/pacman.d/hooks"
+sleep 2
+[ ! -d /etc/pacman.d/hooks ] && sudo mkdir -p /etc/pacman.d/hooks
+if cp .local/polybar-update.hook /etc/pacman.d/hooks; then
+    echo ".local/polybar-update.hook copied to /etc/pacman.d/hooks"
+else
+    echo "Failed to copy .local/polybar-update.hook to /etc/pacman.d/hooks"
+fi
 sleep 2
 clear
 
@@ -206,24 +218,33 @@ else
 fi
 clear
 
-# Enable mpd
-echo "Enabling mpd"
-sleep 2
-if ! systemctl --user is-enabled mpd.service | grep -q "enabled"; then
-    systemctl --user enable mpd.service
-    systemctl --user start mpd.service
-else
-    echo "mpd is already enabled"
-fi
-sleep 2
-
 # Enable lightdm
 echo "Enabling lightdm"
 sleep 2
-if ! systemctl is-enabled lightdm | grep -q "enabled"; then
+if ! systemctl is-enabled lightdm &> /dev/null; then
     sudo systemctl enable lightdm
 else
     echo "lightdm is already enabled"
+fi
+sleep 2
+
+# Enable mpd
+echo "Enabling mpd.service"
+sleep 2
+if ! systemctl --user is-enabled mpd.service &> /dev/null; then
+    systemctl --user enable --now mpd.service
+else
+    echo "mpd.service is already enabled"
+fi
+sleep 2
+
+# Enable ArchUpdates.timer
+echo "Enabling ArchUpdates.timer"
+sleep 2
+if ! systemctl --user is-enabled ArchUpdates.timer &> /dev/null; then
+    systemctl --user enable --now ArchUpdates.timer
+else
+    echo "ArchUpdates.timer is already enabled"
 fi
 sleep 2
 
